@@ -73,4 +73,15 @@ public class ArrayDemo {
 
         System.out.println("-------------------");
     }
+
+    // Write a program that find the maximum number in a given array of integers
+    public static int findMaxNumber(int[] numbers){ // {2, 5, 800, 1, 9, 100};
+        int maxNumber = numbers[0]; // 2
+        for (int i = 1; i < numbers.length; i++) { // {5, 800, 1, 9, 100}
+            if(numbers[i] > maxNumber) {
+                maxNumber = numbers[i];
+            }
+        }
+        return maxNumber;
+    }
 }
